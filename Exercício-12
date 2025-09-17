@@ -1,0 +1,66 @@
+programa
+{
+	funcao menu()
+	{
+	escreva("A Lanchonete do campus tem o seguinte cardápio:\n")
+	escreva("*****************************************\n")
+	escreva("Código   Especificação     Preço unitário\n")
+	escreva("100     Cachorro quente        5.00\n")
+	escreva("101          Bauru             2.60\n")
+	escreva("102       Bauru c/ovo          3.80\n")
+	escreva("103        Hamburger           9.00\n")
+	escreva("104      Cheeseburger         11.00\n")
+	escreva("105      Refrigerante           3.00\n")
+	escreva("106     Semente dos Deuses    1000.00\n")
+	escreva("****************************************\n")		
+	}
+    funcao inicio()
+    {
+    	   menu()
+        inteiro codigo, quantidade
+        real total
+
+        escreva("\nDigite o código do item: ")
+        leia(codigo)
+
+        escreva("\nDigite a quantidade desejada: ")
+        leia(quantidade)
+
+        escolha(codigo)
+        {
+            caso 100:
+            escreva("voce selecionou Cachorro quente\n")
+                total = 5.00 * quantidade
+                pare
+            caso 101:
+            escreva("voce selecionou Bauru\n")
+                total = 2.60 * quantidade
+                pare
+            caso 102:
+            escreva("voce selecionou Bauru c/ovo\n")
+                total = 3.80 * quantidade
+                pare
+            caso 103:
+            escreva("voce selecionou Hamburger\n")
+                total = 9.00 * quantidade
+                pare
+            caso 104:
+            escreva("voce selecionou Cheeseburger\n")
+                total = 11.00 * quantidade
+                pare
+            caso 105:
+            escreva("voce selecionou Refrigerante\n")
+                total = 3.00 * quantidade
+                pare
+            caso 106:
+            escreva("voce selecionou Semente dos Deuses\n")
+                total = 1000.00 * quantidade
+                pare
+            caso contrario:
+                escreva("Código inválido!\n")
+                retorne
+        }
+
+        escreva("A sua compra deu R$ ", total, "\n")
+    }
+}
