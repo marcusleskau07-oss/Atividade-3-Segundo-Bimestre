@@ -1,0 +1,23 @@
+
+programa
+{
+inteiro km
+inteiro total
+	funcao inicio()
+	{
+		escreva("Quantos Km/h você estava?\n")
+		leia(km)
+		
+		se(km > 80)
+		{
+			total =  ((km - 80) * 7)
+			escreva("Você foi multado, e a multa vai custar R$7,00 por cada km acima do limite")
+			escreva("\nO total aser pago é R$", total, ",00")
+		}
+		senao 
+		{
+			escreva("Você está dentro da lei")
+		}
+
+	}
+}
