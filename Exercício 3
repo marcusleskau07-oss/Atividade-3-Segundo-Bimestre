@@ -1,0 +1,23 @@
+programa
+{
+	
+inteiro km, dia
+	real km2 = 0.15
+	real dias = 60.00
+	real total1, total2, total3
+	
+	funcao inicio()
+	{
+	escreva("Quantos dias você ficou com o carro aludado: ")	
+	leia(dia)
+
+	escreva("E quantos Km você percorreu com o carro: ")
+	leia(km)
+
+	total1 = dia * dias
+	total2 = km * km2
+	total3 = total1 + total2
+	
+	escreva("O valor total que você deverá pargar é ", total3)
+	}
+}
