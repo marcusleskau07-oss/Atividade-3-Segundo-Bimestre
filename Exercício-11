@@ -1,0 +1,25 @@
+programa
+{
+	inteiro total
+	inteiro n1, n2
+	funcao inicio()
+	{
+		escreva("Digoite a sua primeira nota: ")
+		leia(n1)
+		escreva("Digoite a sua segunda nota: ")
+		leia(n2)
+		total = (n1 + n2) / 2
+		se(total == 100)
+		{
+		escreva("Você foi aprovado com Distinção")
+		}
+		senao se(total >= 70)
+		{
+		escreva("Você foi aprovado")
+		}
+		senao
+		{
+		escreva("você não foi aprovado")
+		}
+	}	
+}
