@@ -1,0 +1,21 @@
+programa
+{
+	inteiro n, n2
+	
+	funcao inicio()
+	{
+		escreva("diga um número: ")
+		leia(n)
+		escreva("diga outro número: ")
+		leia(n2)
+
+		se(n > n2)
+		{
+			escreva(n)
+		}
+		senao 
+		{
+			escreva(n2)
+		}
+	}
+}
