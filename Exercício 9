@@ -1,0 +1,59 @@
+programa
+{
+	inteiro ano
+	cadeia letra
+	
+funcao letras()
+	
+	{
+	escreva("Digite um letra: ")
+	leia(letra)
+	se(letra == "a" ou letra == "e" ou letra == "i" ou letra == "o" ou letra == "u")
+	{
+	escreva("Essa letra é vogal")
+	}
+	senao 
+	{
+	escreva("Essa letra é consoante")	
+	}
+	}
+	funcao Anos()
+	{
+	escreva("\nDigite um ano: ")
+	leia(ano)
+	se(ano <= 0)
+	{
+		ano = 2025
+		escreva("Ano inválido, utilizando ano atual ", ano)
+	}
+	se((ano % 4) == 0)
+	{	
+		se ((ano % 100) == 0)
+		{
+			se((ano % 400) == 0)
+			{	
+				escreva("O ano é bissexto (tem 366 dias).")
+			} 
+			senao 
+			{
+				escreva("O ano não é um ano bissexto (tem 365 dias).")
+			}
+			
+		} 
+		senao 
+		{
+			escreva("O ano é bissexto (tem 366 dias).")	
+		}
+			
+	} 
+	senao 
+	{
+		escreva("O ano não é um ano bissexto (tem 365 dias).")	
+	}
+	}
+	funcao inicio()
+	{
+		letras()
+		Anos()
+	}
+}
