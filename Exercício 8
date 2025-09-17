@@ -1,0 +1,35 @@
+programa
+{
+	
+real n1, n2, n3, total
+	funcao inicio()
+	{
+	escreva("Diga o primeiro número: ")
+	leia(n1)
+	escreva("Diga o segundo número: ")
+	leia(n2)
+	escreva("Diga o terceiro número: ")
+	leia(n3)
+	total = n1 + n2 + n3
+	se(total <= 180)
+	{
+	escreva("É um triângulo, ")
+	se(n1 == n2 e n2 == n3)
+	{
+	escreva("e é Equilátero") 
+	}
+	senao se(n1 == n2 e n2 != n3 ou n2 == n3 e n2 != n1)
+	{
+     escreva("e é isósceles")
+	}
+	senao
+	{
+	escreva("e é Escaleno")
+	}
+	}
+	senao 
+	{
+	escreva("nao é um triângulo")	
+	}
+	}
+}
